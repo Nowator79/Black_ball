@@ -26,7 +26,7 @@ public class LevelManager : MonoBehaviour
             if (DetailLevel != null)
             {
                 VectorModule position = new VectorModule(DetailLevel.transform.position.x, DetailLevel.transform.position.y, DetailLevel.transform.position.z);
-                VectorModule rotation = new VectorModule(DetailLevel.transform.rotation.x, DetailLevel.transform.rotation.y, DetailLevel.transform.rotation.z);
+                QModule rotation = new QModule(DetailLevel.transform.rotation.x, DetailLevel.transform.rotation.y, DetailLevel.transform.rotation.z, DetailLevel.transform.rotation.w);
                 VectorModule scale = new VectorModule(DetailLevel.transform.localScale.x, DetailLevel.transform.localScale.y, DetailLevel.transform.localScale.z);
                 TransformModule transformModule = new TransformModule(position, rotation, scale);
                 detailLevels.Add(new DetailLevelModule(DetailLevel.Id, transformModule));

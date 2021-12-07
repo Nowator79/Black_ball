@@ -199,7 +199,6 @@ public class Manager : MonoBehaviour
         }
     }
 
-
     private void OpenLoadingMenu(int time = 1)
     {
         LoadingMenuPanel.gameObject.SetActive(true);
@@ -230,9 +229,6 @@ public class Manager : MonoBehaviour
         Debug.Log("XML file has ben created");
         LevelModule LevelModule = TestLevel.GetDetailsList();
         LevelModule.SaveLevel(LevelModule);
-
-
-
     }
     public LevelManager CreateLevel(string nameLevel)
     {
@@ -255,8 +251,7 @@ public class Manager : MonoBehaviour
 
                 string name = LevelDetails[item.Id].name;
                 GameObject detailGameObject = Instantiate(LevelDetails[item.Id], levelManager.transform);
-                detailGameObject.transform.position = new Vector3(item.Transform.Position.X, item.Transform.Position.Y, item.Transform.Position.Z);
-                detailGameObject.transform.rotation = Quaternion.Euler(new Vector3(item.Transform.Rotation.X, item.Transform.Rotation.Y, item.Transform.Rotation.Z));
+                detailGameObject.transform.SetPositionAndRotation(new Vector3(item.Transform.Position.X, item.Transform.Position.Y, item.Transform.Position.Z), new Quaternion(item.Transform.Rotation.X, item.Transform.Rotation.Y, item.Transform.Rotation.Z, item.Transform.Rotation.W));
                 detailGameObject.transform.localScale = new Vector3(item.Transform.Size.X, item.Transform.Size.Y, item.Transform.Size.Z);
                 detailGameObject.name = name;
             }

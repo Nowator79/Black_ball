@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\CameraScript.cs" />
     <Compile Include="Assets\Scripts\BtnClickTest.cs" />
+    <Compile Include="Assets\Scripts\Turret.cs" />
     <Compile Include="Assets\Scripts\ProgrammModules\ConstructorLevel\VectorModule.cs" />
     <Compile Include="Assets\Scripts\BtnClick.cs" />
     <Compile Include="Assets\Scripts\DetailLevel.cs" />
@@ -71,10 +72,11 @@
     <Compile Include="Assets\Scripts\ProgrammModules\TelegramBot.cs" />
     <Compile Include="Assets\Scripts\ProgrammModules\ConstructorLevel\TransformModule.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
+    <Compile Include="Assets\Scripts\TurretDetector.cs" />
     <Compile Include="Assets\Scripts\ProgrammModules\ConstructorLevel\DetailLevelModule.cs" />
     <Compile Include="Assets\Scripts\GearObject.cs" />
-    <Compile Include="Assets\Scripts\Turret.cs" />
-    <Compile Include="Assets\Scripts\TurretDetector.cs" />
+    <Compile Include="Assets\Scripts\Bullet.cs" />
+    <Compile Include="Assets\Scripts\ProgrammModules\ConstructorLevel\QModule.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
