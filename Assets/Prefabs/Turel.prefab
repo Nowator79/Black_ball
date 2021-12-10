@@ -63,7 +63,7 @@ MonoBehaviour:
   bullet: {fileID: 5191863459272549996, guid: 44aa1b5ca963b4447a7cdcd919d9c64d, type: 3}
   TurretMuzzle: {fileID: 4725670747919965835}
   rechargeTime: 3
-  FireForse: 300
+  FireForse: 2000
   firePoint: {fileID: 2948201415435568452}
 --- !u!1 &1422229669377705460
 GameObject:
@@ -360,7 +360,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 20
+  m_Radius: 10
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &3904733786071957714
 MonoBehaviour:

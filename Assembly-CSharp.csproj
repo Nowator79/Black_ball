@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{EAE8C095-0161-5C74-8468-3EF5779E8E55}</ProjectGuid>
+    <ProjectGuid>{C7EC3503-8E1B-B074-62E2-0D20A8D3CFE1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -61,6 +61,7 @@
     <Compile Include="Assets\Scripts\Turret.cs" />
     <Compile Include="Assets\Scripts\ProgrammModules\ConstructorLevel\VectorModule.cs" />
     <Compile Include="Assets\Scripts\BtnClick.cs" />
+    <Compile Include="Assets\Scripts\ProgrammModules\ConstructorLevel\QModule.cs" />
     <Compile Include="Assets\Scripts\DetailLevel.cs" />
     <Compile Include="Assets\Scripts\LevelManager.cs" />
     <Compile Include="Assets\Scripts\Manager.cs" />
@@ -68,15 +69,15 @@
     <Compile Include="Assets\Scripts\ProgrammModules\ConstructorLevel\LevelModule.cs" />
     <Compile Include="Assets\Scripts\ManagerGUI.cs" />
     <Compile Include="Assets\Scripts\DeadZone.cs" />
-    <Compile Include="Assets\Scripts\ProgrammModules\GameProcess.cs" />
+    <Compile Include="Assets\Scripts\Bullet.cs" />
+    <Compile Include="Assets\Scripts\ProgrammModules\ConstructorLevel\GameProcess.cs" />
     <Compile Include="Assets\Scripts\ProgrammModules\TelegramBot.cs" />
     <Compile Include="Assets\Scripts\ProgrammModules\ConstructorLevel\TransformModule.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\TurretDetector.cs" />
     <Compile Include="Assets\Scripts\ProgrammModules\ConstructorLevel\DetailLevelModule.cs" />
     <Compile Include="Assets\Scripts\GearObject.cs" />
-    <Compile Include="Assets\Scripts\Bullet.cs" />
-    <Compile Include="Assets\Scripts\ProgrammModules\ConstructorLevel\QModule.cs" />
+    <Compile Include="Assets\Scripts\ProgrammModules\GlobalConfig.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -685,7 +686,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{FD5864D9-35E8-B162-5409-654529EDAA63}</Project>
+      <Project>{D8FC6BF1-A02D-784E-0338-F689CEED3152}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
   </ItemGroup>

@@ -9,7 +9,7 @@ public class BtnLevelEnd : MonoBehaviour
         if (collider.CompareTag("Player"))
         {
             Manager manager = GameObject.FindGameObjectWithTag("Manager").GetComponent<Manager>();
-            manager.LoadMainMenuLevel();
+            manager.LevelSuccess();
         }
     }
 }

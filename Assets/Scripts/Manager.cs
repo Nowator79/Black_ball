@@ -24,8 +24,11 @@ public class Manager : MonoBehaviour
     public BtnClick BtnTestClick;
     public List<BtnClick> LvlBtns = new List<BtnClick>();
 
+    /*Œœ÷»ŒÕ¿À*/
     [SerializeField]
     private bool telegramDebug;
+    [SerializeField]
+    private bool musicOn;
 
     [SerializeField]
     private Transform BtnsTransform;
@@ -63,6 +66,7 @@ public class Manager : MonoBehaviour
             TelegramBot.telegramDebug = telegramDebug;
         }
         //ÏÛÁ˚Í‡
+        if(musicOn)
         {
             StartCoroutine(MusicPlay());
             IEnumerator MusicPlay()
@@ -193,7 +197,7 @@ public class Manager : MonoBehaviour
             LvlBtns.Add(btnClick);
 
             BtnObj.transform.position = StartVector + new Vector3(i * 5, 0, 0);
-            bool active = (i <= gameProcess.LevelSuccess + 1);
+            bool active = (i <= gameProcess.LevelSuccess);
 
             btnClick.InitBtn(i, active);
         }
